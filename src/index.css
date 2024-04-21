@@ -5,7 +5,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   border-radius: 8px;
-
+  width: 1120px;
   background-color: #eaedeb;
 }
 
@@ -22,7 +22,7 @@
   overflow: hidden;
   border-radius: 8px 0 0 8px;
 }
-h1 {
+.heading {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 48px;
@@ -31,11 +31,71 @@ h1 {
   color: #263e2c;
 }
 
-h2 {
+.subheading {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
   text-align: center;
   color: #263e2c;
+  margin-bottom: 24px;
+}
+
+.card-content {
+  padding: 96px;
+}
+
+button {
+  border-radius: 32px;
+  border: 2px solid;
+  padding: 15px 25px;
+  cursor: pointer;
+}
+
+.amount-button {
+  border: 2px solid #2f4e37;
+  color: #2f4e37;
+  margin: 4px;
+  font-weight: 700;
+  width: 82px;
+}
+
+.amount-button:hover {
+  background: #cdd5cf;
+}
+
+.amount-button:active {
+  background: #2f4e37;
+  color: white;
+}
+.active {
+  background: #2f4e37;
+  color: white;
+}
+.donate-button {
+  margin-top: 24px;
+  background: #fec31d;
+  border: 2px solid #fec31d;
+  color: #2f4e37;
+  font-weight: 700;
+  width: 100%;
+}
+.donate-button:hover {
+  background: #e5b11d;
+  border: 2px solid #e5b11d;
+}
+
+.fullwidth {
+  width: 46%;
+}
+
+.fundraising-regulator {
+  margin-right: 18px;
+  margin-top: -6px;
+}
+
+.svg-container {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
 }
