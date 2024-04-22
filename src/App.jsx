@@ -47,7 +47,7 @@ function App() {
           </button>
         </div>
 
-        <div className="button-group">
+        <div className="amount-button-group">
           {isRegular
             ? ["£1", "£2", "£5", "£10"].map((amount, index) => (
                 <button
