@@ -3,11 +3,12 @@
 .heading {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
-
   text-align: center;
   color: #263e2c;
 }
-
+.regular-text {
+  font-size: 8px;
+}
 .subheading {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
@@ -70,7 +71,7 @@ button {
 .svg-container {
   margin-top: 32px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .card-image-container {
@@ -106,12 +107,28 @@ button {
     border-radius: 8px 0 0 8px;
     margin-left: -25%;
   }
+
+  .payment-providers {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+  }
 }
 /* mobile styling */
 @media (max-width: 768px) {
   .fundraising-regulator {
-    position: relative;
-    top: 24px;
+    margin-top: 18px;
+  }
+  .payment-providers {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: -16px;
+  }
+  .svg-container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 40px;
   }
 
   button {
